@@ -1,16 +1,7 @@
-=== Wp debug log plus ===
-Contributors: Satoshi Kaneyasu
-Donate link:
-Tags: debug, log
-Requires at least: 4.9.4
-Tested up to: 4.9.5
-Stable tag: 1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
 It is a plug-in which outputs start log, end log, SQL log and error log to WordPress's debug.log.
 
-== Description ==
+## Description
+
 
 When this plug-in is enabled, logs are output to debug.log in the following cases.
 * At the start of the request
@@ -28,11 +19,12 @@ The log format is as follows.
 | Date and time | The log output date and time. |
 | Request timestamp | timestamp at the start of the request. Logs output from one request have the same value in all logs. |
 | IP address | IP address of the client. |
-Login ID | Login ID of the login. It will be blank until Wordpress authentication process is over. |
+|Login ID | Login ID of the login. It will be blank until Wordpress authentication process is over. |
 
-You can set the log output timing with * Wp debug log plus * of * Settings *.
+You can set the log output timing with * Wp debug log plus * of *Settings*.
+
 | Setting item | Contents |
-| - | - |
+| ----- | ----- |
 | Start log | Whether to output Start log |
 | Start log text | Output contents of Start log |
 | Get parameters log | Whether to output the parameter when the request is "Get" |
@@ -44,7 +36,7 @@ You can set the log output timing with * Wp debug log plus * of * Settings *.
 | Log of mail transmission error | When a mail transmission error occurs Log whether to output |
 | All logs of admin-ajax.php | Whether or not to output logs when requested is admin-ajax.php |
 
-== Installation ==
+## Installation
 
 You can install this plugin directly from your WordPress dashboard:
 

@@ -105,7 +105,7 @@ class Wp_Debug_Log_Plus_Admin {
 		}
 	?>
 		<div class="wrap">
-			<h2>Wp Debug Log Plus Log output target</h2>
+			<h2>Wp Debug Log Plus</h2>
 				<?php
 				if ( ! is_null( filter_input( INPUT_POST, 'saved' ) ) ) {
 					echo '<div id="setting-error-settings_updated" class="updated settings-error notice is-dismissible">
