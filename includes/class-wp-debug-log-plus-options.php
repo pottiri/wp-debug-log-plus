@@ -3,7 +3,7 @@
  * Wp Options class
  *
  * @package Wp Debug Log Plus
- * @since   0.0.1
+ * @since   1.0.0
  */
 
 if ( class_exists( 'Wp_Debug_Log_Plus_Options' ) ) {
@@ -14,7 +14,7 @@ if ( class_exists( 'Wp_Debug_Log_Plus_Options' ) ) {
  * Admin page class
  *
  * @package Wp Debug Log Plus
- * @since   0.0.1
+ * @since   1.0.0
  */
 class Wp_Debug_Log_Plus_Options {
 
@@ -22,7 +22,7 @@ class Wp_Debug_Log_Plus_Options {
 	/**
 	 * Instances of this class.
 	 *
-	 * @since 0.0.1
+	 * @since 1.0.0
 	 * @access private
 	 * @var object
 	 */
@@ -31,7 +31,7 @@ class Wp_Debug_Log_Plus_Options {
 	/**
 	 * Options for this plugin.
 	 *
-	 * @since 0.0.1
+	 * @since 1.0.0
 	 * @access private
 	 * @var Array
 	 */
@@ -40,7 +40,7 @@ class Wp_Debug_Log_Plus_Options {
 	/**
 	 * Constructor
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access protected
 	 * @return void
 	 */
@@ -51,7 +51,7 @@ class Wp_Debug_Log_Plus_Options {
 	/**
 	 * Returns singleton object
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return object
 	 */
@@ -66,7 +66,7 @@ class Wp_Debug_Log_Plus_Options {
 	 * Loads the object
 	 * Define a hook here
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -77,7 +77,7 @@ class Wp_Debug_Log_Plus_Options {
 	/**
 	 * Get option value
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @param string $key Optional key.
 	 * @param string $default Initial value when there is no value.
@@ -97,7 +97,7 @@ class Wp_Debug_Log_Plus_Options {
 	/**
 	 * Set option
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @param string $key Optional key.
 	 * @param string $value Optional value.
@@ -113,7 +113,7 @@ class Wp_Debug_Log_Plus_Options {
 	/**
 	 * Update options
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -127,11 +127,11 @@ class Wp_Debug_Log_Plus_Options {
 	/**
 	 * Processing when stopping the plug-in.
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
 	public function deactivation() {
-		delee_option( 'wp_debug_log_plus' );
+		delete_option( 'wp_debug_log_plus' );
 	}
 }

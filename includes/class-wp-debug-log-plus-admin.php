@@ -3,7 +3,7 @@
  * Admin page class
  *
  * @package Wp Debug Log Plus
- * @since   0.0.1
+ * @since   1.0.0
  */
 
 if ( class_exists( 'Wp_Debug_Log_Plus_Admin' ) ) {
@@ -14,7 +14,7 @@ if ( class_exists( 'Wp_Debug_Log_Plus_Admin' ) ) {
  * Admin page class
  *
  * @package Wp Debug Log Plus
- * @since   0.0.1
+ * @since   1.0.0
  */
 class Wp_Debug_Log_Plus_Admin {
 
@@ -22,7 +22,7 @@ class Wp_Debug_Log_Plus_Admin {
 	/**
 	 * Instances of this class.
 	 *
-	 * @since 0.0.1
+	 * @since 1.0.0
 	 * @access private
 	 * @var object
 	 */
@@ -31,7 +31,7 @@ class Wp_Debug_Log_Plus_Admin {
 	/**
 	 * Constructor
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access protected
 	 * @return void
 	 */
@@ -42,7 +42,7 @@ class Wp_Debug_Log_Plus_Admin {
 	/**
 	 * Returns singleton object
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return object
 	 */
@@ -57,7 +57,7 @@ class Wp_Debug_Log_Plus_Admin {
 	 * Loads the object
 	 * Define a hook here
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -70,7 +70,7 @@ class Wp_Debug_Log_Plus_Admin {
 	/**
 	 * Add link to menu
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -81,7 +81,7 @@ class Wp_Debug_Log_Plus_Admin {
 	/**
 	 * Drawing screen
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */

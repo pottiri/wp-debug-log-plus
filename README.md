@@ -20,7 +20,7 @@ The log format is as follows.
 | IP address | IP address of the client. |
 |Login ID | Login ID of the login. It will be blank until Wordpress authentication process is over. |
 
-You can set the log output timing with *Wp debug log plus* of *Settings*.
+You can set the log output timing with *Wp Debug Log Plus* of *Settings*.
 
 | Setting item | Contents |
 | ----- | ----- |
@@ -39,7 +39,7 @@ You can set the log output timing with *Wp debug log plus* of *Settings*.
 You can install this plugin directly from your WordPress dashboard:
 
  1. Go to the *Plugins* menu and click *Add New*.
- 2. Search for *Wp debug log plus*.
- 3. Click *Install Now* next to the *Wp debug log plus* plugin.
+ 2. Search for *Wp Debug Log Plus*.
+ 3. Click *Install Now* next to the *Wp Debug Log Plus* plugin.
  4. Activate the plugin.
- 5. Output timing can be set in *Wp debug log plus* in *Setting* menu.
+ 5. Output timing can be set in *Wp Debug Log Plus* in *Setting* menu.

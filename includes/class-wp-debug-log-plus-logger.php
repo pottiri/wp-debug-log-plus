@@ -3,7 +3,7 @@
  * Log output class
  *
  * @package Wp Debug Log Plus
- * @since   0.0.1
+ * @since   1.0.0
  */
 
 if ( class_exists( 'Wp_Debug_Log_Plus_Logger' ) ) {
@@ -14,7 +14,7 @@ if ( class_exists( 'Wp_Debug_Log_Plus_Logger' ) ) {
  * Log output class
  *
  * @package Wp Debug Log Plus
- * @since   0.0.1
+ * @since   1.0.0
  */
 class Wp_Debug_Log_Plus_Logger {
 
@@ -22,7 +22,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Instances of this class.
 	 *
-	 * @since 0.0.1
+	 * @since 1.0.0
 	 * @access private
 	 * @var object
 	 */
@@ -31,7 +31,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Whether the start log was output.
 	 *
-	 * @since 0.0.1
+	 * @since 1.0.0
 	 * @access private
 	 * @var bool
 	 */
@@ -40,7 +40,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Whether or not you have logged in user.
 	 *
-	 * @since 0.0.1
+	 * @since 1.0.0
 	 * @access private
 	 * @var bool
 	 */
@@ -49,7 +49,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Die handler before rewriting.
 	 *
-	 * @since 0.0.1
+	 * @since 1.0.0
 	 * @access private
 	 * @var string
 	 */
@@ -58,7 +58,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Request time..
 	 *
-	 * @since 0.0.1
+	 * @since 1.0.0
 	 * @access private
 	 * @var float
 	 */
@@ -67,7 +67,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Constructor
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access protected
 	 * @return void
 	 */
@@ -78,7 +78,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Returns singleton object
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return object
 	 */
@@ -93,13 +93,13 @@ class Wp_Debug_Log_Plus_Logger {
 	 * Loads the object
 	 * Define a hook here
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
 	public function load() {
 		// REQUEST_TIME_FLOAT, REQUEST_TIME can not be obtained without directly referring to $_SERVER.
-		// phpcs:disable
+		// phpcs:disable\
 		if ( isset( $_SERVER['REQUEST_TIME_FLOAT'] ) ) {
 			$this->request_time = wp_unslash( $_SERVER['REQUEST_TIME_FLOAT'] );
 		}
@@ -113,7 +113,7 @@ class Wp_Debug_Log_Plus_Logger {
 		// SQL log.
 		add_filter( 'query', array( $this, 'sqllog' ), 9999, 1 );
 
-		// wp_die log.
+		// wp_die log
 		add_filter( 'wp_die_ajax_handler', array( $this, 'die_handler' ) );
 		add_filter( 'wp_die_xmlrpc_handler', array( $this, 'die_handler' ) );
 		add_filter( 'wp_die_handler', array( $this, 'die_handler' ) );
@@ -123,7 +123,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Debug log output
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @param  string $message String to log.
 	 * @return void
@@ -135,7 +135,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Log output
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @param  string $message String to log.
 	 * @return void
@@ -163,7 +163,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Check if login user has been loaded
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -174,7 +174,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Get request start time
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access private
 	 * @return string
 	 */
@@ -185,7 +185,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Get ip address
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access private
 	 * @return string
 	 */
@@ -203,7 +203,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Surround and return the login ID of the logged-in user
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access private
 	 * @return string
 	 */
@@ -221,7 +221,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Log the contents of the request at the start of processing
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -262,7 +262,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Log the contents of the request at the start of processing
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -284,7 +284,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Output SQL log
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @param  string $query Execution SQL.
 	 * @return string
@@ -303,7 +303,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Rewrite die handler
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @param  mixed $return Value passed through for {@see 'wp_die_handler'} filter.
 	 * @return mixed Value passed through for {@see 'wp_die_handler'} filter.
@@ -316,7 +316,7 @@ class Wp_Debug_Log_Plus_Logger {
 	/**
 	 * Log backtrace when an exception occurs
 	 *
-	 * @since  0.0.1
+	 * @since  1.0.0
 	 * @access public
 	 * @param  string       $message Error message.
 	 * @param  string       $title   Optional. Error title. Default empty.
