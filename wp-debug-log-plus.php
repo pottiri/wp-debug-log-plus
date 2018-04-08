@@ -10,6 +10,7 @@ Author URI: https://blog.pottiri.tech
 
 define('WPDLP_MAIN_FILE', __FILE__);
 define('WPDLP_PLUGIN_DIR', dirname(__FILE__));
+load_plugin_textdomain( 'wp-debug-log-plus', false, basename( dirname( __FILE__ ) ) . '/languages' );
 require_once( dirname( __FILE__ ) . '/includes/class-wp-debug-log-plus-options.php' );
 require_once( dirname( __FILE__ ) . '/includes/class-wp-debug-log-plus-admin.php' );
 require_once( dirname( __FILE__ ) . '/includes/class-wp-debug-log-plus-logger.php' );

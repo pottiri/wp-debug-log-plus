@@ -8,7 +8,6 @@ When this plug-in is enabled, logs are output to debug.log in the following case
 * At the end of the request
 * When issuing SQL
 * When wp_die occurs with 40x error, 50x error
-* When a mail transmission error occurs
 
 The log format is as follows.
 ```
@@ -33,7 +32,6 @@ You can set the log output timing with * Wp debug log plus * of *Settings*.
 | End log text | Output contents of End log. "% s" is replaced with the request processing time (seconds). |
 | SQL log | Whether to log SQL |
 | Backtrace log at error occurrence | Whether to output backtrace to the log when a 40x or 50x error occurs |
-| Log of mail transmission error | When a mail transmission error occurs Log whether to output |
 | All logs of admin-ajax.php | Whether or not to output logs when requested is admin-ajax.php |
 
 ## Installation

@@ -1,0 +1,49 @@
+# Copyright (C) 2018 WordPress
+# This file is distributed under the same license as the WordPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Wp debug log plus\n"
+"Report-Msgid-Bugs-To: https://make.wordpress.org/polyglots/\n"
+"POT-Creation-Date: 2018-04-08 21:00+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-04-08 21:00+0900\n"
+"Last-Translator: Satoshi Kaneyasu <pottiripottiri@gmail.com>\n"
+"Language-Team: Satoshi Kaneyasu <pottiripottiri@gmail.com>\n"
+
+msgid "Your settings have been saved."
+msgstr ""
+
+msgid "Start log"
+msgstr ""
+
+msgid "Start log text"
+msgstr ""
+
+msgid "End log"
+msgstr ""
+
+msgid "End log text"
+msgstr ""
+
+msgid "Get parameters log"
+msgstr ""
+
+msgid "Post parameters log"
+msgstr ""
+
+msgid "SQL log"
+msgstr ""
+
+msgid "Backtrace log at error occurrence"
+msgstr ""
+
+msgid "Log of mail transmission error"
+msgstr ""
+
+msgid "All logs of admin-ajax.php"
+msgstr ""
+
+msgid "%s is replaced with the processing time from the start of the request."
+msgstr ""

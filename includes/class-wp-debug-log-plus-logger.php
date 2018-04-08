@@ -118,9 +118,6 @@ class Wp_Debug_Log_Plus_Logger {
 		add_filter( 'wp_die_xmlrpc_handler', array( $this, 'die_handler' ) );
 		add_filter( 'wp_die_handler', array( $this, 'die_handler' ) );
 
-		// Mail error log.
-		add_action( 'wp_mail_failed', array( $this, 'mail_errorlog' ), 9999, 1 );
-
 	}
 
 	/**
@@ -297,7 +294,7 @@ class Wp_Debug_Log_Plus_Logger {
 			$this->startlog();
 		}
 		if ( ! Wp_Debug_Log_Plus_Options::get_object()->get_option( 'sql_log_flag', 1 ) ) {
-			return;
+			return $query;
 		}
 		$this->log( 'SQL:' . $query );
 		return $query;
@@ -353,7 +350,7 @@ class Wp_Debug_Log_Plus_Logger {
 			&& ( preg_match( '/^4/', $args['response'] )
 			|| preg_match( '/^5/', $args['response'] ) )
 		) {
-			$this->log( '**** An error occurred ****' );
+			$this->log( '**** An error occurred(' . $args['response'] . ') ****' );
 			// phpcs:disable
 			$this->log( debug_backtrace() );
 			// phpcs:enable
@@ -362,22 +359,6 @@ class Wp_Debug_Log_Plus_Logger {
 		if ( $this->original_die_handler ) {
 			call_user_func( $this->original_die_handler, $message, $title, $args );
 		}
-	}
-
-	/**
-	 * Log of mail transmission failure log
-	 *
-	 * @since  0.0.1
-	 * @access public
-	 * @param  WP_Error $error Error object.
-	 * @return void
-	 */
-	public function mail_errorlog( WP_Error $error ) {
-		if ( ! Wp_Debug_Log_Plus_Options::get_object()->get_option( 'mail_log_flag', 1 ) ) {
-			return;
-		}
-		$this->log( '**** Mail error occurred ****' );
-		$this->log( $error );
 	}
 
 }
