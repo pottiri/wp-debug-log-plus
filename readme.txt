@@ -30,7 +30,7 @@ The log format is as follows.
 | IP address | IP address of the client. |
 |Login ID | Login ID of the login. It will be blank until Wordpress authentication process is over. |
 
-You can set the log output timing with * Wp debug log plus * of *Settings*.
+You can set the log output timing with *Wp debug log plus* of *Settings*.
 
 | Setting item | Contents |
 | ----- | ----- |
