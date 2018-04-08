@@ -16,7 +16,7 @@ require_once( dirname( __FILE__ ) . '/includes/class-wp-debug-log-plus-admin.php
 require_once( dirname( __FILE__ ) . '/includes/class-wp-debug-log-plus-logger.php' );
 Wp_Debug_Log_Plus_Options::get_object();
 Wp_Debug_Log_Plus_Admin::get_object();
-// Wp_Debug_Log_Plus_Logger::get_object();
+Wp_Debug_Log_Plus_Logger::get_object();
 
 if ( !function_exists( 'wpdlp_log' ) ) {
 	/**

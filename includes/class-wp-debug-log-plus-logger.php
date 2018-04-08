@@ -117,7 +117,6 @@ class Wp_Debug_Log_Plus_Logger {
 		add_filter( 'wp_die_ajax_handler', array( $this, 'die_handler' ) );
 		add_filter( 'wp_die_xmlrpc_handler', array( $this, 'die_handler' ) );
 		add_filter( 'wp_die_handler', array( $this, 'die_handler' ) );
-
 	}
 
 	/**
@@ -290,6 +289,7 @@ class Wp_Debug_Log_Plus_Logger {
 	 * @return string
 	 */
 	public function sqllog( $query ) {
+
 		if ( ! $this->startlog_output ) {
 			$this->startlog();
 		}

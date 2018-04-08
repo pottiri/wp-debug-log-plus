@@ -116,7 +116,7 @@ class Wp_Debug_Log_Plus_Admin {
 				<table class="form-table">
 					<tr>
 						<th scope="row"><label for="start_log_flag"><?php esc_html_e( 'Start log', 'wp-debug-log-plus' ); ?></label></th>
-						<td><label><input name="start_log_flag" type="checkbox" id="start_log_flag" value="1" <?php checked( 1, Wp_Debug_Log_Plus_Options::get_object()->get_option( 'start_log_flag' ) ); ?>/></label></td>
+						<td><label><input name="start_log_flag" type="checkbox" id="start_log_flag" value="1" <?php checked( 1, Wp_Debug_Log_Plus_Options::get_object()->get_option( 'start_log_flag', 1 ) ); ?>/></label></td>
 					</tr>
 					<tr>
 						<th scope="row"><label for="start_log_text"><?php esc_html_e( 'Start log text', 'wp-debug-log-plus' ); ?></label></th>

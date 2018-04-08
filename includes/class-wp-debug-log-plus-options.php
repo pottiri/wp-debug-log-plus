@@ -46,6 +46,7 @@ class Wp_Debug_Log_Plus_Options {
 	 */
 	protected function __construct() {
 		$this->load();
+		$this->options = get_option( 'wp_debug_log_plus' );
 	}
 
 	/**
@@ -84,10 +85,6 @@ class Wp_Debug_Log_Plus_Options {
 	 * @return string
 	 */
 	public function get_option( $key, $default = null ) {
-		if ( is_null( $this->options ) ) {
-			$this->options = get_option( 'wp_debug_log_plus' );
-		}
-
 		if ( ! isset( $this->options[ $key ] ) || '' === $this->options[ $key ] ) {
 			return $default;
 		}
