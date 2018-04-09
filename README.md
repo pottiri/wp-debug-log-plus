@@ -34,6 +34,12 @@ You can set the log output timing with *Wp Debug Log Plus* of *Settings*.
 | Backtrace log at error occurrence | Whether to output backtrace to the log when a 40x or 50x error occurs |
 | All logs of admin-ajax.php | Whether or not to output logs when requested is admin-ajax.php |
 
+By calling wpdlp_log, you can output logs in the above format whenever you like.
+Example)
+```
+wpdlp_log('message');
+```
+
 ## Installation
 
 You can install this plugin directly from your WordPress dashboard:
@@ -43,3 +49,14 @@ You can install this plugin directly from your WordPress dashboard:
  3. Click *Install Now* next to the *Wp Debug Log Plus* plugin.
  4. Activate the plugin.
  5. Output timing can be set in *Wp Debug Log Plus* in *Setting* menu.
+
+ After installation, edit wp-config.php and enable WP_DEBUG and WP_DEBUG_LOG.
+ Example)
+ ```
+ define('WP_DEBUG', true);
+ if ( WP_DEBUG ) {
+ 		define( 'WP_DEBUG_LOG', true );
+ 		define( 'WP_DEBUG_DISPLAY', false );
+ 		@ini_set( 'display_errors',0 );
+ }
+ ```

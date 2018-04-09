@@ -55,8 +55,8 @@ You can install this plugin directly from your WordPress dashboard:
  5. Output timing can be set in *Wp Debug Log Plus* in *Setting* menu.
 
 == Screenshots ==
-1. 1_console.png
-2. 2_settings.png
+1. screenshot-1.png
+2. screenshot-2.png
 
 == Changelog ==
 
