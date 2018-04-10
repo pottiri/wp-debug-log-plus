@@ -1,7 +1,7 @@
-It is a plug-in which outputs start log, end log, SQL log and error log to WordPress's debug.log.
+Since Wordpress' s debug.log has too little information, I made a plugin that will give out information necessary for development.
+When this plug-in is enabled, it will issue start log / end log / SQL log / error log.
 
 ## Description
-
 
 When this plug-in is enabled, logs are output to debug.log in the following cases.
 * At the start of the request
